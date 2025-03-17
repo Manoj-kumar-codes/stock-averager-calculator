@@ -3,10 +3,10 @@
 const calculator = document.querySelector(".calculate");
 const reset = document.querySelector(".reset");
 const resetFun = function () {
-  document.getElementById("price1").value = 0;
-  document.getElementById("share1").value = 0;
-  document.getElementById("price2").value = 0;
-  document.getElementById("share2").value = 0;
+  document.getElementById("price1").value = "";
+  document.getElementById("share1").value = "";
+  document.getElementById("price2").value = "";
+  document.getElementById("share2").value = "";
 };
 resetFun();
 calculator.addEventListener("click", function () {
