@@ -29,4 +29,9 @@ calculator.addEventListener("click", function () {
     avgPrices.textContent = avg;
   }
 });
-reset.addEventListener("click", resetFun);
+reset.addEventListener("click", function () {
+  resetFun();
+  document.getElementById("total-share").textContent = 0;
+  document.getElementById("total-price").textContent = 0;
+  document.getElementById("total-avg").textContent = 0;
+});
