@@ -23,7 +23,7 @@ calculator.addEventListener("click", function () {
   } else {
     const avg = (price1 * share1 + price2 * share2) / (share1 + share2);
     const totalShare = share1 + share2;
-    const totalAmount = price1 + price2;
+    const totalAmount = price1 * share1 + price2 * share2;
     totalShares.textContent = totalShare;
     totalPrices.textContent = totalAmount;
     avgPrices.textContent = avg;
